@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Melissa Guzmán</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <nav class="menu">
+    <a href="#inicio">Inicio</a>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#intereses">Intereses</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#multimedia">Multimedia</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+    <!-- ENCABEZADO -->
+    <header id="inicio">
+        <p>PORTAFOLIO PERSONAL</p>
+        <h1>MELISSA GUZMÁN</h1>
+        <h3>EDICIÓN AUDIOVISUAL · FOTOGRAFÍA</h3>
+    </header>
+
+    <!-- FOTOGRAFÍA PRINCIPAL -->
+    <div class="portada">
+        <img src="imagenes/imagen.jpg" alt="Fotografía de Melissa">
+    </div>
+
+    <!-- DESCRIPCIÓN -->
+    <section class="descripcion">
+        <h2>Hola, soy Melissa</h2>
+        <h3>DISEÑADORA MULTIMEDIA EN FORMACIÓN</h3>
+        <p>
+
+Soy estudiante de Diseño Multimedia y 
+me considero una persona creativa, curiosa 
+y apasionada por el mundo visual. 
+Me gusta explorar nuevas ideas, experimentar 
+con diferentes herramientas y transformar mi 
+imaginación en propuestas creativas.
+Me interesan especialmente el diseño gráfico, 
+la fotografía, la edición audiovisual y la ilustración digital.
+ Cada proyecto representa una oportunidad para aprender, 
+ descubrir nuevas habilidades y expresar mi propia identidad a través del arte y la tecnología.
+Este portafolio reúne algunos de mis trabajos, experiencias 
+y proyectos realizados durante mi formación académica, mostrando 
+mi proceso creativo y mi crecimiento como futura diseñadora multimedia.
+
+Bienvenidos a mi mundo creativo.
+
+        </p>
+    </section>
+
+    <main>
+
+        <!-- SOBRE MÍ -->
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>
+                Me considero una persona puntual, carismática y perfeccionista. 
+                Me gusta prestar atención a los detalles, organizar mis ideas y dar lo mejor de mí 
+                en cada actividad que realizo. Soy creativa, responsable y dedicada; disfruto aprender 
+                cosas nuevas, experimentar con diferentes herramientas y convertir mis ideas en proyectos visuales.
+                 Me caracterizo por mi compromiso, mi entusiasmo
+                 y mis ganas de seguir creciendo tanto personal como profesionalmente.Me considero una persona creativa, curiosa y muy perfeccionista con ganas
+                de seguir aprendiendo. Disfruto desarrollar ideas y
+                convertirlas en proyectos visuales.
+            </p>
+        </section>
+
+        <!-- INTERESES -->
+        <section id="intereses">
+            <h2>Mis intereses</h2>
+            <div class="galeria">
+                <div>
+                    <img src="imagenes/diseño multimedia.jpg" alt="Diseño">
+                    <h3>Diseño gráfico</h3>
+                </div>
+                <div>
+                    <img src="imagenes/fotografia.jpg" alt="Fotografía">
+                    <h3>Fotografía</h3>
+                </div>
+                <div>
+                    <img src="imagenes/animacion.jpg" alt="Animación">
+                    <h3>Animación</h3>
+                </div>
+                <div>
+                    <img src="imagenes/produccion audivisula.jpg" alt="Producción audiovisual">
+                    <h3>Producción audiovisual</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROYECTOS -->
+        <!-- PROYECTOS -->
+<section id="proyectos">
+    <h2>Mis proyectos</h2>
+
+    <div class="galeria">
+
+        <div>
+            <img src="imagenes/visual.jpeg"
+                 alt="Primer proyecto ">
+            <h3>FOTOGRAFÍA PUBLICITARIA</h3>
+            <p>Diseño de una propuesta publicitaria enfocada en la fotografía, 
+donde se combinan imágenes, elementos gráficos y recursos visuales
+ para transmitir una idea de manera atractiva. Este trabajo me permitió explorar
+ la composición, la creatividad y la comunicación visual.</p>
+        </div>
+
+        <div>
+            <img src="imagenes/fotografia.jpeg"
+                 alt="Segundo proyecto creativo">
+            <h3>Experiencia en Fotografía</h3>
+            <p>Participación en una actividad práctica de fotografía,
+                 donde aprendí sobre el uso de cámaras y exploré diferentes
+                  formas de capturar imágenes o como realizar un podcast</p>
+        </div>
+
+    </div>
+</section>
+<!-- MULTIMEDIA -->
+<section id="multimedia">
+
+    <h2>Contenido multimedia</h2>
+
+    <h3>Mi audio</h3>
+    <audio controls>
+        <source src="audio/L.I.F.E - &ME.mp3" type="audio/mpeg">
+    </audio>
+
+    
+<section id="multimedia">
+
+    <h2>Contenido multimedia</h2>
+
+    <h3>Mi video</h3>
+
+    <video controls width="600">
+        <source src="video/Intelygente® Productora de Video y Fotografía en Bogotá, Colombia. Productora Audiovisual Colombiana.mp4" type="video/mp4">
+    </video>
+
+</section>
+
+<!-- GENERADOR DE ARTE DIGITAL -->
+<section id="arte">
+    <h2>MI ARTE GENERATIVO</h2>
+    <p>Explora la creatividad mediante figuras, colores y patrones digitales.</p>
+
+    <canvas id="lienzo" width="800" height="450"
+    style="width:100%; max-width:800px; background:#080808;
+    border:1px solid #a66cff; border-radius:15px;">
+    </canvas>
+
+    <br>
+
+    <label>Selecciona una paleta:</label>
+    <select id="paleta">
+        <option value="morado">Morado y rosa</option>
+        <option value="azul">Azul y celeste</option>
+        <option value="calido">Colores cálidos</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="generarArte()">Generar diseño</button>
+    <button onclick="descargarArte()">Descargar PNG</button>
+
+</section>
+
+<script>
+const lienzo = document.getElementById("lienzo");
+const ctx = lienzo.getContext("2d");
+
+function generarArte() {
+
+    let paleta = document.getElementById("paleta").value;
+
+    let colores = [];
+
+    if (paleta === "morado") {
+        colores = ["#a66cff", "#ff4fa3", "#ffffff"];
+    } else if (paleta === "azul") {
+        colores = ["#00d9ff", "#3155ff", "#ffffff"];
+    } else {
+        colores = ["#ff5733", "#ffc300", "#ff4fa3"];
+    }
+
+    ctx.fillStyle = "#080808";
+    ctx.fillRect(0, 0, 800, 450);
+
+    for (let i = 0; i < 60; i++) {
+
+        let x = Math.random() * 800;
+        let y = Math.random() * 450;
+        let tamaño = Math.random() * 35 + 10;
+
+        let color = colores[Math.floor(Math.random() * colores.length)];
+
+        ctx.fillStyle = color;
+        ctx.globalAlpha = 0.7;
+
+        if (i % 2 === 0) {
+            ctx.beginPath();
+            ctx.arc(x, y, tamaño, 0, Math.PI * 2);
+            ctx.fill();
+        } else {
+            ctx.fillRect(x, y, tamaño, tamaño);
+        }
+
+        ctx.globalAlpha = 1;
+    }
+}
+
+function descargarArte() {
+    let enlace = document.createElement("a");
+    enlace.download = "mi-composicion.png";
+    enlace.href = lienzo.toDataURL("image/png");
+    enlace.click();
+}
+
+generarArte();
+</script>
+
+<!-- HABILIDADES -->
+<section id="habilidades">
+
+    <h2>Mis habilidades</h2>
+
+    <div class="galeria">
+
+        <div>
+            <h3>Creatividad</h3>
+            <p>Desarrollo de ideas y propuestas originales.</p>
+        </div>
+
+        <div>
+            <h3>Diseño visual</h3>
+            <p>Interés por la composición y la comunicación visual.</p>
+        </div>
+
+        <div>
+            <h3>Fotografía</h3>
+            <p>Exploración de imágenes y expresión visual.</p>
+        </div>
+
+        <div>
+            <h3>Edición audiovisual</h3>
+            <p>Interés por la creación y edición de videos.</p>
+        </div>
+
+    </div>
+
+</section>
+</section>
+
+        <!-- CONTACTO -->
+        <section id="contacto">
+    
+            <h2>MIS REDES SOCIALES</h2>
+            <p>GRACIAS POR VISITAR MI PAGINA PERSONAL</p>
+            <div class="redes">
+    <a href="https://www.instagram.com/TU_USUARIO"
+       target="_blank">
+        <img src="imagenes/insta .png" alt="Instagram">
+        Instagram
+    </a>
+
+    <a href="https://wa.me/593TU_NUMERO"
+       target="_blank">
+        <img src="imagenes/wassap.png" alt="WhatsApp">
+        WhatsApp
+    </a>
+</div>
+            <a href="https://www.instagram.com/" target="_blank">
+                0967779875
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Melissa Guzmán | Mi portafolio personal</p>
+    </footer>
+
+</body>
+</html>
